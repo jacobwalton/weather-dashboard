@@ -1,0 +1,145 @@
+* {
+  font-family: san;
+  list-style: none;
+  font-family: 'Raleway',Arial, Helvetica, sans-serif;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(25, 100, 200);
+  height: 70px;
+  top: 0;
+  left: 0;
+  letter-spacing: 2px;
+  line-height: 0px;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+/* main-container styling */
+.main-container {
+  border: 1px solid grey;
+  border-radius: 10px;
+  position: relative;
+  float: right;
+  margin: 10px;
+  height: 300px;
+  width: 65%;
+  top: 80px;
+  background-color: white;
+  padding: 20px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 0px;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 3px groove lightgray;
+}
+#current-weather {
+  float: left;
+  text-align: left;
+  padding-left: 0px;
+  line-height: 300%;
+  font-size: 18px;
+}
+/* aside styling */
+aside {
+  float: left;
+  position: relative;
+  border-radius: 10px;
+  top: 80px;
+  width: 25%;
+  padding: 5px;
+  padding-left: 15px;
+  margin-top: 10px;
+  height: auto;
+  background-color: rgb(27, 41, 114);
+  color: white;
+}
+h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+input {
+  height: 40px;
+  width: 74%;
+  margin-top: 14px;
+  font-size: 20px;
+  
+}
+/* search btn */
+.fa-search {
+  font-size: 20px;
+  color: white;
+}
+.fa-search:active {
+  font-size: 20px;
+  opacity: 20%;
+}
+#search-btn {
+  width: auto;
+  height: 47px;
+  background-color: skyblue;
+  border-radius: 0px 7px 7px 0px;
+  position: relative;
+  bottom: 1px;
+}
+
+#searched {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  padding-left: 0px;
+  padding-right: 19px;
+  color: black;
+}
+
+.searched-list {
+  border-bottom: 2px solid gray;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-variant-caps: all-petite-caps;
+}
+.searched-list:hover {
+  background-color: skyblue;
+}
+
+/* forecast styling */
+.forecast-container {
+  border: 1px solid grey;
+  border-radius: 10px;
+  float: right;
+  margin: 10px;
+  height: 300px;
+  width: 65%;
+  position: relative;
+  top: 75px;
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  
+}
+
+
+.forecast-card{
+    background-color: rgb(50, 110, 200);
+    border-radius: 5px;
+    width: 125px;
+    height: 230px;
+    padding: 5px;
+    margin: 10px;
+    border: 0px;
+    display: inline-table;
+    color: white;
+}

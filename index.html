@@ -4,13 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc153e2359.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
     <!-- JQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<nav>
+
+    <h1>Weather Dashboard</h1>
+
+</nav>
+<div class="main-container">
+<h2>
+    City Test (DATE/TEST)
+</h2>
+<ul id="current-weather">
+    <li>Temperature: </li>
+    <li>Humidity: </li>
+    <li>Wind Speed: </li>
+    <li>UV Index: <span id="uv-display">test</span></li>
+</ul>
+</div>
+
+<aside>
+    <h3>Search for a City:</h3>
+<input type="text" id="city-search" placeholder="City"/><button id="search-btn"><i class="fas fa-search"></i></button>
+<ul id="searched">
+    <li class="searched-list">City Test</li>
+    <li class="searched-list">City Test</li>
+    <li class="searched-list">City Test</li>
+    <li class="searched-list">City Test</li>
+    <li class="searched-list">City Test</li>
+
+</ul>
+</aside>
+
+<div class="forecast-container">
+<h2>5-Day Forecast:</h2>
+<div class="forecast-card">
+<h3>Date/Test</h3><br>
+
+<p>Temp: </p><br>
+<p>Humidity: </p>
+</div>
+
+<div class="forecast-card">
+<h3>Date/Test</h3><br>
+
+<p>Temp: </p><br>
+<p>Humidity: </p>
+</div>
 
 
+</div>
 
     <script src="./script.js"></script>
 </body>
