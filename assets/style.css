@@ -3,6 +3,7 @@
   list-style: none;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
+
 body {
   background-color: rgb(245, 245, 255);
 }
@@ -33,6 +34,7 @@ nav {
   top: 80px;
   background-color: white;
   padding: 10px;
+  padding-bottom: 50px;
 }
 
 h2 {
@@ -50,13 +52,13 @@ h2 {
   font-size: 18px;
 }
 
-#uv-display{
-    border-radius: 3px;
-    background-color: goldenrod;
-    padding: 3px;
-    color: white;
-    position: relative;
-    top: 2px;
+#uv-display {
+  border-radius: 3px;
+  background-color: goldenrod;
+  padding: 3px;
+  color: white;
+  position: relative;
+  top: 2px;
 }
 /* aside styling */
 aside {
@@ -73,6 +75,7 @@ aside {
   background-color: rgb(27, 41, 114);
   color: white;
 }
+
 h3 {
   font-size: 20px;
   margin-bottom: 0px;
@@ -124,7 +127,7 @@ input {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
-  font-variant-caps: all-petite-caps;
+  /* font-variant-caps: all-petite-caps; */
 }
 .searched-list:hover {
   background-color: rgb(215, 245, 255);
@@ -132,16 +135,15 @@ input {
 
 /* forecast styling */
 .forecast-container {
-  border: 1px solid grey;
+  border-top: 5px groove lightgrey;
   border-radius: 10px;
-  float: right;
-  margin: 10px;
+  margin-top: 20px;
   height: auto;
-  width: 68%;
-  position: relative;
-  top: 75px;
+  width: 100%;
+  display: inline-block;
   background-color: white;
-  padding: 10px;
+  padding: 0px;
+  padding-top: 10px;
   text-align: left;
 }
 
@@ -155,4 +157,33 @@ input {
   border: 0px;
   display: inline-table;
   color: white;
+}
+.forecast-card:hover {
+  background-color: rgb(38, 85, 156);
+}
+
+/* media queries */
+@media (max-width: 750px) {
+  .main-container {
+    width: 90%;
+    margin: 0px;
+    margin-top: 20px;
+    float: left;
+    padding: 10px;
+  }
+
+  aside {
+    width: 90%;
+    position: relative;
+    top: 70px;
+    float: left;
+    padding: 10px;
+    margin: 0px;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    font-size: small;
+    height: 40px;
+  }
 }

@@ -1,103 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"/>
-    <!-- icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/dc153e2359.js" crossorigin="anonymous"></script>
-    <!-- Moment js -->
     <script src="https://unpkg.com/moment"></script>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- JQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <nav>
-      <h1>Weather Dashboard</h1>
+        <h1>Weather Dashboard</h1>
     </nav>
+    <aside>
+        <h3>Search for a City:</h3>
+        <input type="text" id="city-search" placeholder=" Enter City Here" /><button id="search-btn">
+            <i class="fas fa-search"></i>
+        </button>
+        <!-- searched results -->
+        <ul id="searched">
+            <li class="searched-list">City Test</li>
+            <li class="searched-list">City Test</li>
+            <li class="searched-list">City Test</li>
+            <li class="searched-list">City Test</li>
+            <li class="searched-list">City Test</li>
+        </ul>
+    </aside>
+
     <!-- current weather displayed here -->
     <div class="main-container">
-      <h2>
-        City Test 
-      </h2>
-      <ul id="current-weather">
-        <li>Temperature:</li>
-        <li>Humidity:</li>
-        <li>Wind Speed:</li>
-        <li>UV Index: <span id="uv-display">test</span></li>
-      </ul>
-    </div>
+        <h2>
+            City Test
+        </h2>
+        <ul id="current-weather">
+            <li>Temperature:</li>
+            <li>Humidity:</li>
+            <li>Wind Speed:</li>
+            <li>UV Index: <span id="uv-display">test</span></li>
+        </ul>
+        <div class="forecast-container">
+            <h2>5-Day Forecast:</h2>
+            <div class="forecast-card" id="forecast-card1">
+                <br />
+                <p>Temp:</p>
+                <br />
+                <p>Humidity:</p>
+            </div>
     
+            <div class="forecast-card" id="forecast-card2">
+                <br />
+                <p>Temp:</p>
+                <br />
+                <p>Humidity:</p>
+            </div>
     
-    <aside>
-      <h3>Search for a City:</h3>
-      <input type="text" id="city-search" placeholder="City" /><button
-        id="search-btn"
-      >
-        <i class="fas fa-search"></i>
-      </button>
-      <ul id="searched">
-        <li class="searched-list">City Test</li>
-        <li class="searched-list">City Test</li>
-        <li class="searched-list">City Test</li>
-        <li class="searched-list">City Test</li>
-        <li class="searched-list">City Test</li>
-      </ul>
-    </aside>
-<!-- 5 day forecast displayed here -->
-    <div class="forecast-container">
-      <h2>5-Day Forecast:</h2>
-      <div class="forecast-card" id="forecast-card1">
-        
-        <br />
-
-        <p>Temp:</p>
-        <br />
-        <p>Humidity:</p>
-      </div>
-
-      <div class="forecast-card" id="forecast-card2">
-        
-        <br />
-
-        <p>Temp:</p>
-        <br />
-        <p>Humidity:</p>
-      </div>
-
-      <div class="forecast-card" id="forecast-card3">
-        
-        <br />
-
-        <p>Temp:</p>
-        <br />
-        <p>Humidity:</p>
-      </div>
-
-      <div class="forecast-card" id="forecast-card4">
-        
-        <br />
-
-        <p>Temp:</p>
-        <br />
-        <p>Humidity:</p>
-      </div>
-
-      <div class="forecast-card" id="forecast-card5">
-        
-        <br />
-
-        <p>Temp:</p>
-        <br />
-        <p>Humidity:</p>
-      </div>
+            <div class="forecast-card" id="forecast-card3">
+                <br />
+                <p>Temp:</p>
+                <br />
+                <p>Humidity:</p>
+            </div>
+    
+            <div class="forecast-card" id="forecast-card4">
+                <br />
+                <p>Temp:</p>
+                <br />
+                <p>Humidity:</p>
+            </div>
+    
+            <div class="forecast-card" id="forecast-card5"><br/>
+                <p>Temp:</p>
+                <br />
+                <p>Humidity:</p>
+            </div>
+        </div>
     </div>
+
+
+   
+
+    </div>
+    <!-- 5 day forecast displayed here -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
-  </body>
+</body>
+
 </html>
