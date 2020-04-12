@@ -1,7 +1,10 @@
 * {
   font-family: san;
   list-style: none;
-  font-family: 'Raleway',Arial, Helvetica, sans-serif;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(245, 245, 255);
 }
 nav {
   position: fixed;
@@ -18,7 +21,6 @@ nav {
   z-index: 1;
 }
 
-
 /* main-container styling */
 .main-container {
   border: 1px solid grey;
@@ -26,11 +28,11 @@ nav {
   position: relative;
   float: right;
   margin: 10px;
-  height: 300px;
-  width: 65%;
+  height: auto;
+  width: 68%;
   top: 80px;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 h2 {
@@ -47,13 +49,23 @@ h2 {
   line-height: 300%;
   font-size: 18px;
 }
+
+#uv-display{
+    border-radius: 3px;
+    background-color: goldenrod;
+    padding: 3px;
+    color: white;
+    position: relative;
+    top: 2px;
+}
 /* aside styling */
 aside {
   float: left;
   position: relative;
   border-radius: 10px;
   top: 80px;
-  width: 25%;
+  left: 0px;
+  width: 23%;
   padding: 5px;
   padding-left: 15px;
   margin-top: 10px;
@@ -66,28 +78,31 @@ h3 {
   margin-bottom: 0px;
 }
 input {
-  height: 40px;
+  height: 44px;
   width: 74%;
   margin-top: 14px;
-  font-size: 20px;
-  
+  font-size: 22px;
+  border: 1px solid black;
+  border-right: 0px;
 }
 /* search btn */
 .fa-search {
   font-size: 20px;
   color: white;
 }
-.fa-search:active {
-  font-size: 20px;
-  opacity: 20%;
-}
+
 #search-btn {
   width: auto;
-  height: 47px;
-  background-color: skyblue;
+  height: 48px;
+  background-color: rgb(25, 100, 200);
   border-radius: 0px 7px 7px 0px;
+  border: 1px solid black;
+  border-left: 0px;
   position: relative;
   bottom: 1px;
+}
+#search-btn:active {
+  background-color: rgb(15, 75, 145);
 }
 
 #searched {
@@ -112,7 +127,7 @@ input {
   font-variant-caps: all-petite-caps;
 }
 .searched-list:hover {
-  background-color: skyblue;
+  background-color: rgb(215, 245, 255);
 }
 
 /* forecast styling */
@@ -121,25 +136,23 @@ input {
   border-radius: 10px;
   float: right;
   margin: 10px;
-  height: 300px;
-  width: 65%;
+  height: auto;
+  width: 68%;
   position: relative;
   top: 75px;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
-  
 }
 
-
-.forecast-card{
-    background-color: rgb(50, 110, 200);
-    border-radius: 5px;
-    width: 125px;
-    height: 230px;
-    padding: 5px;
-    margin: 10px;
-    border: 0px;
-    display: inline-table;
-    color: white;
+.forecast-card {
+  background-color: rgb(50, 110, 200);
+  border-radius: 5px;
+  width: 125px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border: 0px;
+  display: inline-table;
+  color: white;
 }
