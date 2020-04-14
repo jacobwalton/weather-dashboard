@@ -20,73 +20,43 @@
     <aside>
         <h3>Search for a City:</h3>
         <input type="text" id="city-search" placeholder="Enter City Here" /><button id="search-btn">
-            <i class="fas fa-search"></i>
+            <span class="fas fa-search"></span>
         </button>
         <!-- searched results -->
         <ul id="searched">
-            <li class="searched-list">City Test</li>
-            <li class="searched-list">City Test</li>
-            <li class="searched-list">City Test</li>
-            <li class="searched-list">City Test</li>
-            <li class="searched-list">City Test</li>
         </ul>
     </aside>
 
     <!-- current weather displayed here -->
     <div class="main-container">
-        <h2>
-            City Test
+        <h2 id="city-display">
+
         </h2>
         <ul id="current-weather">
-            <li>Temperature:</li>
-            <li>Humidity:</li>
-            <li>Wind Speed:</li>
-            <li>UV Index: <span id="uv-display">test</span></li>
+            <!-- <span id="uv-span"></span> -->
         </ul>
         <div class="forecast-container">
             <h2>5-Day Forecast:</h2>
             <div class="forecast-card" id="forecast-card1">
-                <br />
-                <p>Temp:</p>
-                <br />
-                <p>Humidity:</p>
             </div>
-    
+
             <div class="forecast-card" id="forecast-card2">
-                <br />
-                <p>Temp:</p>
-                <br />
-                <p>Humidity:</p>
             </div>
-    
-            <div class="forecast-card" id="forecast-card3">
-                <br />
-                <p>Temp:</p>
-                <br />
-                <p>Humidity:</p>
+
+            <div class="forecast-card" id="forecast-card3">SEARCH CITY TO DISPLAY FORECAST!
             </div>
-    
+
             <div class="forecast-card" id="forecast-card4">
-                <br />
-                <p>Temp:</p>
-                <br />
-                <p>Humidity:</p>
             </div>
-    
-            <div class="forecast-card" id="forecast-card5"><br/>
-                <p>Temp:</p>
-                <br />
-                <p>Humidity:</p>
+
+            <div class="forecast-card" id="forecast-card5">
+
             </div>
         </div>
     </div>
-
-
-   
-
     </div>
     <!-- 5 day forecast displayed here -->
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
