@@ -1,8 +1,9 @@
 //today's date
 var today = moment().format("M-D-YY");
-
+var getSearched = localStorage.getItem('storedSearch')
 //printing date to main container
 $("<h3>").text(today).prependTo($(".main-container"));
+
 
 //search button click event
 $("#search-btn").click(function () {
@@ -26,21 +27,26 @@ $("#search-btn").click(function () {
   }).then(function (res) {
     console.log(res);
 
+    
     //if statement that only allow valid results to be added to list
-
-
-    if (parseInt(res.main.temp) < 300) {
-      console.log(res.main.temp);
-      console.log(cityName.replace(" ", "+"));
-      $("#searched").prepend(
-        $("<button>")
+    var searchedBtn = $("<button>")
           .attr("id", "search-result")
           .attr("value", cityName)
           .addClass("searched-list")
           .text($("input").val())
+
+          function storedSearch(){
+            localStorage.setItem('storedSearch', searchedBtn.val())
+            console.log(searchedBtn.val())
+          }
+          storedSearch();
+
+    if (parseInt(res.main.temp) < 300) {
+      $("#searched").prepend(
+        searchedBtn
       );
     }
-  
+
     //display city name
     $("#city-display").text($("#city-search").val());
     if (parseInt(res.main.temp) > 55) {
@@ -50,7 +56,7 @@ $("#search-btn").click(function () {
     }
 
     //prevent duplicating data on multiple clicks
-    $("#current-weather").val("");
+    $("#current-weather").empty();
 
     //display current weather data
     $("<li>")
@@ -148,11 +154,7 @@ $("#search-btn").click(function () {
 });
 
 $("#searched").click(function () {
-  // $("#city-search").append($("#search-result").val());
-  
-  // cityName = ($(event.target).val());
   $("#city-search").val(($(event.target).val()))
-
   //run search button click event
   $("#search-btn").trigger("click");
 });
