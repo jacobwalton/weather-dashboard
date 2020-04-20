@@ -10,4 +10,4 @@ The weather dashboard displays a 5 day forecast under the current weather displa
 
 Using momentjs, I was also able to print the current date as well as future dates used in the forecast.
 
-Deployed appliocation link: https://jawalton6616.github.io/weather-dashboard/
+Deployed application link: https://jawalton6616.github.io/weather-dashboard/
