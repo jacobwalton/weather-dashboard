@@ -10,13 +10,13 @@ $("#search-btn").click(function () {
 
   //current weather api
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityName.replace(" ", "+") +
     "&units=imperial&appid=6d5c20e9aa4b04f4d3a467e43f9018ef";
 
   //forecast weather api
   var forecastQueryURL =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     cityName.replace(" ", "+") +
     "&units=imperial&appid=6d5c20e9aa4b04f4d3a467e43f9018ef";
 
